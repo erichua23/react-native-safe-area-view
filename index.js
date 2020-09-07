@@ -150,7 +150,7 @@ class SafeView extends Component {
     const WIDTH = isLandscape ? X_HEIGHT : X_WIDTH;
     const HEIGHT = isLandscape ? X_WIDTH : X_HEIGHT;
 
-    this.view._component.measureInWindow((winX, winY, winWidth, winHeight) => {
+    this.view.measureInWindow((winX, winY, winWidth, winHeight) => {
       if (!this.view) {
         return;
       }
